@@ -4,21 +4,21 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', (req, res) => {
-    res.sendFile(__path + '/docs/home.html')
+    res.sendFile(__path + 'index.html')
 })
 
-router.get('/docs', (req, res) => {
-	res.sendFile(__path + '/docs/dashboard.html')
+router.get('/', (req, res) => {
+	res.sendFile(__path + '/')
 })
 router.get('/docs/asupan', (req, res) => {
-	res.sendFile(__path + '/api/asupan.html')
+	res.sendFile(__path + '/api/asup an.html')
 })
 router.get('/docs/anime', (req, res) => {
 	res.sendFile(__path + '/api/anime.html')
 })
 
 router.get('/docs/cecan', (req, res) => {
-	res.sendFile(__path + '/api/cecan.html')
+	res.sendFile(__path + '/docs/randomimage.html')
 })
 
 router.get('/docs/downloader', (req, res) => {
